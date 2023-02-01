@@ -1,0 +1,193 @@
+/*
+  Breakpoints: 
+    Mobile (640px = 40em)
+    Tablet (768px = 48em)
+    Tablet Landscape (1024px = 64em)
+    Laptop (1440px = 90em)
+    Really large screens ( >= 2000 = 125 em)
+*/
+
+* {
+  --primary-color: #fffcf2;
+  --secondary-color: #BE8A60;
+
+  transition: 300ms;
+}
+
+/* ------------------------------ BUTTONS ------------------------------ */
+
+/* button filled */
+.btn__fill {
+  margin: auto;
+  padding: 25px 22px;
+  border: 3px solid var(--primary-color);
+
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* button empty */
+.btn__empty {
+  margin: auto;
+  padding: 25px 22px;
+  border: 3px solid var(--secondary-color);
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* button round filled */
+.btn__roundFill {
+  margin: auto;
+  padding: 25px 22px;
+  border: 3px solid var(--primary-color);
+  border-radius: 25px;
+
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* button round empty */
+.btn__roundEmpty {
+  margin: auto;
+  padding: 25px 22px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 25px;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* nav fill button */
+.btn__navFill {
+  margin: auto;
+  padding: 25px 22px;
+  border: 3px solid var(--secondary-color);
+
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* nav empty button */
+.btn__navEmpty {
+  margin: auto;
+  padding: 25px 22px;
+  border: 3px solid var(--primary-color);
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* ------------------------------ INPUT FIELDS ------------------------------ */
+.input__filled {
+  box-sizing: border-box;
+  
+  padding: 25px 22px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 25px;
+  
+  outline: none;
+  
+  box-shadow: none;
+  font-size: 25px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.input__filled::placeholder {
+  color: var(--secondary-color);
+}
+
+/* ------------------------------ VERTICAL CONTAINER ------------------------------ */
+
+.vertical__container {
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+  /* height: fit-content; */
+
+  margin: auto;
+  padding: auto;
+}
+
+/* ------------------------------ HORIZONTAL CONTAINER ------------------------------ */
+.horizontal__container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: fit-content;
+
+  margin: auto;
+  padding: auto;
+}
+
+/* Tablet Landscape (1024px = 64em) AND ABOVE */
+@media only screen and (min-width: 64em) {
+
+/* ------------------------------ BUTTONS RESPONSIVE ------------------------------ */
+
+  /* button filled on hover */
+  .btn__fill:hover {
+    border: 3px solid var(--secondary-color);
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  /* button empty on hover */
+  .btn__empty:hover {
+    border: 3px solid var(--primary-color);
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  /* button round filled hover */
+  .btn__roundFill:hover {
+    border: 3px solid var(--secondary-color);
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  /* button round empty hover */
+  .btn__roundEmpty:hover {
+    border: 3px solid var(--primary-color);
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  /* nav fill button hover */
+  .btn__navFill:hover {
+    border: 3px solid var(--primary-color);  
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  /* nav empty button hover */
+  .btn__navEmpty:hover {
+    border: 3px solid var(--secondary-color);  
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  /* ------------------------------ INPUT FIELDS RESPONSIVE ------------------------------ */
+  .input__filled:hover {
+    box-sizing: border-box;
+  
+    padding: 25px 22px;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    box-shadow:  0 2px 5px var(--secondary-color);
+    
+    font-size: 25px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+}

@@ -1,0 +1,34 @@
+/* topnav main container, width 100% off the screen and secondary color code as background  */
+.topnav {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+/* topnav item, basic setup */
+.topnav__item {
+    margin: 0;
+    padding: auto;
+}
+
+/* text inside topnav item, hide while screens is smaller than 48em (~640px) */
+.topnav p {
+    margin: 0 5px;
+    display: none;
+}
+
+/*
+  Breakpoints: 
+    Mobile (640px = 40em)
+    Tablet (768px = 48em)
+    Tablet Landscape (1024px = 64em)
+    Laptop (1440px = 90em)
+    Really large screens ( >= 2000 = 125 em)
+*/
+
+/* Tablet (768px = 48em) AND ABOVE */
+@media only screen and (min-width: 48em) { 
+    /* text inside topnav item, display as a block while screen is bigger than 48em (~640px) */
+    .topnav p {
+        display: block;
+    }
+}
