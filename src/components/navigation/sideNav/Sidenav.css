@@ -1,0 +1,26 @@
+.sidenav {
+    margin: 0;
+
+    width: fit-content;
+    height: 100vh;
+
+    z-index: inherit;
+
+    background-color: var(--primary-color);
+}
+
+.sidenav__item {
+    margin: 7.5px 15px;
+    padding: 15px 7.5vw;
+
+    border-radius: 25px;
+}
+
+.open {
+    -webkit-box-shadow: 10px 15px 15px -4px rgba(190,138,96,0.35); 
+box-shadow: 10px 15px 15px -4px rgba(190,138,96,0.35);
+}
+
+.closed {
+    transform: translate(-101%, 0);
+}

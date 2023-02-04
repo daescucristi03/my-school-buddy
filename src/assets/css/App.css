@@ -11,7 +11,14 @@
   --primary-color: #fffcf2;
   --secondary-color: #BE8A60;
 
+  
   transition: 300ms;
+}
+
+.app__container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: var(--primary-color); */
 }
 
 /* ------------------------------ BUTTONS ------------------------------ */
