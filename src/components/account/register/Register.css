@@ -1,0 +1,87 @@
+.register {
+    /* sizing and page fitment */
+    box-sizing: content-box;
+    width: auto;
+    height: fit-content;
+
+    /* margins, paddings, borders */
+    margin: auto;
+    padding: 5vw;
+    border: 0;
+
+    /* box-shadows */
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(190,138,96,0.5); 
+    box-shadow: 0px 0px 15px 5px rgba(190,138,96,0.5);
+
+    /* background color */
+    background-color: var(--primary-color);
+
+    /* display mode */
+    display: flex;
+    flex-direction: column;
+}
+
+.register__text {
+    /* sizing and in-container fitment */
+    box-sizing: border-box;
+
+    /* margins, paddings, borders */
+    margin: 0;
+    padding: 4px 10px;
+    border: 0;
+
+    /* color */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.register__title {
+    margin: 0 auto 1vh auto;
+}
+
+.register__box {
+    box-sizing: border-box;
+
+    margin: 10px 0;
+    padding: 14px 10px;
+    border: 0;
+
+    /* background color */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+}
+
+.register__box:hover {
+    /* shadows */
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(190,138,96,0.5); 
+    box-shadow: 0px 10px 15px -5px rgba(190,138,96,0.5);
+}
+
+.register__loginContainer {
+    /* sizing and page fitment */
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+
+    /* margins, paddings, borders */
+    margin: auto;
+    padding: 0;
+    border: 0;
+
+    /* background color */
+    background-color: var(--primary-color);
+
+    /* display mode */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Tablet (768px = 48em) AND ABOVE */
+@media only screen and (min-width: 48em) {
+    
+}
