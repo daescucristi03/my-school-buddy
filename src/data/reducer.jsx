@@ -3,6 +3,9 @@ export const initialState = {
 }
 
 const reducer = (state, action) => {
+    console.clear();
+    console.log('active nav state -> ' + state.navState);
+
     switch(action.type) {
         case 'TOGGLE_NAV_STATE':
             return {

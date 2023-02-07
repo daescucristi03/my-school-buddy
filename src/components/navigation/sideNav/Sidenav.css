@@ -1,26 +1,115 @@
 .sidenav {
+    /* sizing and page fitment */
+    box-sizing: content-box;
+    width: auto;
+    /* height: fit-content; */
+    height: auto;
+
+    /* margins, paddings, borders */
     margin: 0;
+    padding: 0;
+    border: 0;
 
-    width: fit-content;
-    height: 100vh;
+    /* shadows */
+    -webkit-box-shadow: 10px 5px 15px -5px rgba(190,138,96,0.5); 
+    box-shadow: 10px 5px 15px -5px rgba(190,138,96,0.5);
 
-    z-index: inherit;
-
+    /* background color */
     background-color: var(--primary-color);
-}
+    
+    /* display mode */
+    display: flex;
+    flex-direction: row;
 
-.sidenav__item {
-    margin: 7.5px 15px;
-    padding: 15px 7.5vw;
+    /* format content position */
+    justify-content: space-between;
 
-    border-radius: 25px;
+    /* z-index and positioning */
+    z-index: 998;
 }
 
 .open {
-    -webkit-box-shadow: 10px 15px 15px -4px rgba(190,138,96,0.35); 
-box-shadow: 10px 15px 15px -4px rgba(190,138,96,0.35);
+    /* sizing and page fitment */
+    box-sizing: content-box;
+    width: 100vw;
+    height: fit-content;
+
+    /* margins, paddings, borders */
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /* content opacity */
+    opacity: 1;
+
+    /* display content method  */
+    display: flex;
+    flex-direction: column;
 }
 
 .closed {
-    transform: translate(-101%, 0);
+    /* sizing and page fitment */
+    box-sizing: content-box;
+    width: 100vw;
+    height: 0;
+
+    /* margins, paddings, borders */
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /* content opacity */
+    opacity: 0;
+}   
+
+.sidenav__item {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+
+    /* margins, paddings, borders */
+    margin: 0;
+    padding: 20px 5vw;
+    border: 0;
+
+    /* colors */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
+
+.sidenav__item:hover {
+    /* colors */
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Tablet (768px = 48em) AND ABOVE */
+@media only screen and (min-width: 48em) { 
+    .open {
+        /* sizing */
+        width: fit-content;
+        height: 100vh;
+    }
+
+    .closed {
+        /* sizing */
+        width: 0;
+        height: 100vh;
+    }  
+}
+  
+/* Tablet Landscape (1024px = 64em) AND ABOVE */
+@media only screen and (min-width: 64em) {
+    .open {
+        /* sizing */
+        width: fit-content;
+        height: 100vh;
+    }
+
+    .closed {
+        /* sizing */
+        width: 0;
+        height: 100vh;
+    }  
+}
+  

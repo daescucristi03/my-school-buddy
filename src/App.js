@@ -2,9 +2,9 @@ import './assets/css/App.css';
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-import Topnav from './components/navigation/topNav/Topnav';
-import Sidenav from './components/navigation/sideNav/Sidenav';
 import Home from './pages/Home/Home';
+import Topnav from './components/navigation/topnav/Topnav';
+import Sidenav from './components/navigation/sidenav/Sidenav';
 
 function App() {
   return (
